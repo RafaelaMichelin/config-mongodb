@@ -6,7 +6,7 @@ export type DepartamentoDocument = HydratedDocument<Departamento>;
 @Schema()
 export class Departamento{
     @Prop({required:true})
-    id_departamento: string;
+    name: string;
 
     @Prop()
     descricao: string;
