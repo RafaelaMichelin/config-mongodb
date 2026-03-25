@@ -1,12 +1,12 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { HydratedDocument, Types } from "mongoose";
 
-export type CateogiraDocument = HydratedDocument<Categoria>;
+export type CategoriaDocument = HydratedDocument<Categoria>;
 
 @Schema()
 export class Categoria{
     @Prop({required: true})
-    id_categoria: string;
+    name: string;
 
     @Prop()
     descricao: string;
